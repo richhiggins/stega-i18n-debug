@@ -1,3 +1,9 @@
+# Reproduction repo to demonstrate internationalized-array related stega requests
+
+To install & run `npm i` and `npm dev`.
+
+[This post](http://localhost:3333/presentation/post/9b0612fb-0681-4817-8a5a-a1019a042628?preview=/posts/hello-world) has an example 'Greeting' field that uses the plugin and will trigger the extra requests when a value is present.
+
 # Clean Next.js + Sanity app
 
 This template includes a [Next.js](https://nextjs.org/) app with a [Sanity Studio](https://www.sanity.io/) – an open-source React application that connects to your Sanity project’s hosted dataset. The Studio is configured locally and can then be deployed for content collaboration.
