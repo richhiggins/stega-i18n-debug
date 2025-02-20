@@ -20,6 +20,10 @@ export const post = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'greeting',
+      type: 'internationalizedArrayString',
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',

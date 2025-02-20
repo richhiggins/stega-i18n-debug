@@ -16,6 +16,7 @@ import {
   type DocumentLocation,
 } from 'sanity/presentation'
 import {assist} from '@sanity/assist'
+import {internationalizedArray} from 'sanity-plugin-internationalized-array'
 
 // Environment variables for project configuration
 const projectId = process.env.SANITY_STUDIO_PROJECT_ID || 'your-projectID'
@@ -122,6 +123,14 @@ export default defineConfig({
     unsplashImageAsset(),
     assist(),
     visionTool(),
+    internationalizedArray({
+      languages: [
+        {id: 'en', title: 'English'},
+        {id: 'fr', title: 'French'},
+      ],
+      defaultLanguages: ['en'],
+      fieldTypes: ['string'],
+    }),
   ],
 
   // Schema configuration, imported from ./src/schemaTypes/index.ts

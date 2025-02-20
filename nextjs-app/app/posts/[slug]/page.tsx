@@ -35,7 +35,7 @@ export async function generateStaticParams() {
  */
 export async function generateMetadata(
   props: Props,
-  parent: ResolvingMetadata,
+  parent: ResolvingMetadata
 ): Promise<Metadata> {
   const params = await props.params;
   const { data: post } = await sanityFetch({
@@ -81,6 +81,7 @@ export default async function PostPage(props: Props) {
                   {post.title}
                 </h2>
               </div>
+              {post.greeting ? <p>{post.greeting[0].value}</p> : null}
               <div className="max-w-3xl flex gap-4 items-center">
                 {post.author &&
                   post.author.firstName &&
