@@ -2,7 +2,7 @@
 
 To install & run `npm i` and `npm dev`.
 
-[This post](http://localhost:3333/presentation/post/9b0612fb-0681-4817-8a5a-a1019a042628?preview=/posts/hello-world) has an example 'Greeting' field that uses the plugin and will trigger the extra requests when a value is present.
+Once running locally [This post](http://localhost:3333/presentation/post/9b0612fb-0681-4817-8a5a-a1019a042628?preview=/posts/hello-world) has an example 'Greeting' field that uses the plugin and will trigger the extra requests when a value is present.
 
 # Clean Next.js + Sanity app
 
