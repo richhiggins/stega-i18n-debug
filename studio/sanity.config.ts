@@ -121,7 +121,7 @@ export default defineConfig({
     }),
     // Additional plugins for enhanced functionality
     unsplashImageAsset(),
-    assist(),
+    //    assist(),
     visionTool(),
     internationalizedArray({
       languages: [
