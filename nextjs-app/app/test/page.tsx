@@ -14,14 +14,14 @@ export default async function Page() {
         Simple page to display post titles, stega overlay and inspect the
         requests generated. This text should not be overlayed.
       </h1>
-      {posts.map((post: any) => (
-        <ul style={{ margin: "1rem", listStyle: "disc" }}>
+      <ul style={{ margin: "1rem", listStyle: "disc" }}>
+        {posts.map((post: any) => (
           <li key={post._id}>
             <p>{post.name}</p>
-            <p>{post.heading}</p>
+            <p>{post.heading}</p>x
           </li>
-        </ul>
-      ))}
+        ))}
+      </ul>
     </>
   );
 }

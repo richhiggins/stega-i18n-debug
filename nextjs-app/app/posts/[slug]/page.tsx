@@ -81,7 +81,9 @@ export default async function PostPage(props: Props) {
                   {post.title}
                 </h2>
               </div>
-              {post.greeting ? <p>{post.greeting[0].value}</p> : null}
+              {
+                //post.greeting ? <p>{post.greeting[0].value}</p> : null
+              }
               <div className="max-w-3xl flex gap-4 items-center">
                 {post.author &&
                   post.author.firstName &&
